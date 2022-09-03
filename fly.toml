@@ -1,4 +1,4 @@
-app = "blog-tutorial-4855"
+app = "blog-tutorial-cgradwohl"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = [ ]

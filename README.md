@@ -92,8 +92,8 @@ Prior to your first deployment, you'll need to do a few things:
 - Create two apps on Fly, one for staging and one for production:
 
   ```sh
-  fly apps create blog-tutorial-4855
-  fly apps create blog-tutorial-4855-staging
+  fly apps create blog-tutorial-cgradwohl
+  fly apps create blog-tutorial-cgradwohl-staging
   ```
 
   > **Note:** Make sure this name matches the `app` set in your `fly.toml` file. Otherwise, you will not be able to deploy.
