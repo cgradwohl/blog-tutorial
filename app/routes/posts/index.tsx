@@ -30,6 +30,10 @@ export default function Posts() {
   return (
     <main>
       <h1>Posts</h1>
+      {/* notice that the `to`touch app/routes/posts/admin.tsx prop is just "admin" and it linked to /posts/admin */}
+      <Link to="admin" className="text-red-600 underline">
+        Admin
+      </Link>
       <ul>
         {posts.map((post) => (
           <li key={post.slug}>
