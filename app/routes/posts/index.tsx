@@ -1,11 +1,15 @@
 import { json } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 
+// cool way to pull the type from prisma
+// import type { Post } from "@prisma/client";
 import { getPosts } from "~/models/post.server";
 
 type LoaderData = {
   // this is a handy way to say: "posts is whatever type getPosts resolves to"
   posts: Awaited<ReturnType<typeof getPosts>>;
+  // this is a cool way to pull the type from Prisma
+  // posts: Post[];
 };
 
 /**
